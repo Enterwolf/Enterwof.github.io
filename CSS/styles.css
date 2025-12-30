@@ -37,8 +37,12 @@ body{
   list-style: none;
   padding: 0;
   justify-content: flex-start;
+  margin-top: 40px; 
+  margin-bottom: 40px;
 }
 .card {
+  margin-left: auto; 
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +50,31 @@ body{
   max-width: 300px;
   min-width: 200px;
   text-align: center;
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  background: linear-gradient(135deg, #242424, #333333);
+}
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 3px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 12px;
+}
+
+
 .card img {
   width: 100%;
   max-width: 300px;
@@ -55,7 +83,7 @@ body{
 }
 @media (max-width: 768px) {
   .card {
-    width: 100%;
+    width: 50%;
     max-width: none;
   }
 
@@ -65,5 +93,8 @@ body{
 
   .maintext {
    font-size: 40px; 
+  }
+  .card-list { 
+    flex-direction: column; gap: 24px; 
   }
 }
