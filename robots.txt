@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://entargamesofficial.github.io/sitemap.xml
+Sitemap: https://entergamesofficial.github.io/sitemap.xml
